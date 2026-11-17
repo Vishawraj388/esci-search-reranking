@@ -4,16 +4,29 @@ Course: ES 335 (Machine Learning), undergraduate track. Final deadline: **Nov 17
 Author: Vishaw Raj Meena (24110388).
 Deliverables: a reproducible Python pipeline, a set of written reports, and a static interactive website on GitHub Pages.
 
-> **Instructions for Claude Code**
-> - Build the **complete project end to end**, phase by phase, without stopping for confirmation.
-> - At every `📋 REPORT`, write the report as Markdown in `results/` and continue. I review everything after the build.
-> - Log **every** judgment call (feature added or dropped, parameter, data issue, fallback) in `results/DECISIONS.md`: one numbered line per decision, with a one-line reason.
-> - If something in this spec is impossible (blocked host, missing field, too slow), apply the fallback named here. If none is named, choose the most conservative option, log it, and continue.
-> - **Never** use relevance labels (`esci_label`) to build features. Never use the test split for anything before Phase 6. All tuning and model selection happen inside the training split.
-> - Keep the code simple, typed where helpful, and readable. I must be able to explain every line in a viva. Prefer clear functions over clever abstractions.
-> - Commit after each phase with a clear message. Never commit raw data, model binaries over 50 MB, API tokens or `.env`.
-> - Finish with `results/BUILD_SUMMARY.md` and `results/VIVA.md` (see §11).
+## Development process and AI assistance
 
+This project was developed by the student with assistance from Claude Code, an AI coding assistant.
+
+The student is responsible for:
+- Defining the research question, project scope and objectives.
+- Deciding the dataset, evaluation methodology, leakage constraints and model comparison strategy.
+- Reviewing the proposed implementation and making decisions about the experimental workflow.
+- Interpreting the results, identifying limitations and preparing to explain the technical approach.
+
+Claude Code was used to assist with implementation, debugging, code organisation, report drafting, documentation and website development.
+
+The following principles apply throughout development:
+
+- Treat this specification as the project plan, not as a replacement for the student's understanding or judgment.
+- Explain important implementation choices and their trade-offs when they arise.
+- Do not silently make major methodological changes. Document proposed changes and their reasons in `results/DECISIONS.md`.
+- Do not invent experimental results, interpretations or claims.
+- The student must review the implementation and verify that reported results match the actual experimental outputs.
+- Never use relevance labels (`esci_label`) to build features. Never use the test split for anything before Phase 6.
+- Keep the code readable and explainable. Prefer clear functions over clever abstractions.
+- Never commit raw data, model binaries over 50 MB, API tokens or `.env`.
+- Finish with `results/BUILD_SUMMARY.md` and `results/VIVA.md` (see §11).
 ---
 
 ## 1. The question
