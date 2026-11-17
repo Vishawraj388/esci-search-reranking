@@ -94,7 +94,26 @@ Fallback: the Hugging Face mirror (`tasksource/esci` or similar). If you use it,
 
 ---
 
-## 5. Build phases
+## 5. Student involvement and technical decisions
+
+The student is responsible for understanding and being able to explain
+the complete experimental workflow.
+
+For each major technical decision, document:
+- The decision made.
+- The alternatives considered.
+- The reason for selecting the approach.
+- Whether the decision was made by the student, suggested by an AI assistant,
+  or developed collaboratively.
+
+AI-generated suggestions must not automatically be treated as verified facts.
+Experimental results must come from actual execution of the project pipeline.
+
+The student must independently review the final methodology, code,
+results and conclusions before submission.
+
+---
+## 6. Build phases
 
 ### Phase 1 — Download, build, audit
 Scripts: `download_data.py`, `build_dataset.py` → `data/processed/pairs.parquet` (one row per pair, with joined product fields and cleaned text).
@@ -190,7 +209,7 @@ See §7.
 
 ---
 
-## 6. Metrics summary
+## 7. Metrics summary
 
 | Metric | Why |
 |---|---|
@@ -205,7 +224,7 @@ Rules:
 
 ---
 
-## 7. Website spec (static, GitHub Pages)
+## 8. Website spec (static, GitHub Pages)
 
 Plain HTML + CSS + vanilla JS. Chart.js from cdnjs is allowed. No build step and no server. Data comes from precomputed JSON in `site/data/`, **under 10 MB total**.
 
@@ -232,7 +251,7 @@ Deploy via `.github/workflows/pages.yml` (GitHub Actions publishes `site/` on ev
 
 ---
 
-## 8. Repo structure
+## 9. Repo structure
 
 ```
 ├── SPEC.md
@@ -274,7 +293,7 @@ Rules:
 
 ---
 
-## 9. Limitations to document (site and Report 3)
+## 10. Limitations to document (site and Report 3)
 
 - Re-ranking only: the candidates were pre-retrieved by Amazon, so retrieval errors are invisible.
 - Labels are human judgments with noise and ambiguity, especially S vs E.
@@ -286,7 +305,7 @@ Rules:
 
 ---
 
-## 10. Definition of done
+## 11. Definition of done
 
 - [ ] Reports 1–3, `DECISIONS.md`, `FEATURES.md`, `BUILD_SUMMARY.md` and `VIVA.md` are written.
 - [ ] The test split is used exactly once. Git history shows Report 2 committed **before** `evaluate_test.py` ran.
@@ -298,7 +317,7 @@ Rules:
 
 ---
 
-## 11. Final documents
+## 12. Final documents
 
 **`results/BUILD_SUMMARY.md`:** what was built; the headline results table (random, BM25-title, BM25-all, encoder cosine, LR, LGBM pointwise, LambdaRank, with CIs); the ablation result in one line; deviations from this spec; known issues; and what remains to be done by hand (e.g. enabling Pages).
 
@@ -314,7 +333,7 @@ Rules:
 
 ---
 
-## 12. Reviewer acceptance checklist (for me, after the build)
+## 13. Reviewer acceptance checklist (for me, after the build)
 
 **A. It works**
 - [ ] `python run_all.py --sample 500` runs from a fresh clone.
