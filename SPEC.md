@@ -205,7 +205,7 @@ All models are trained per fold, with preprocessing fit on that fold's training 
 - **Sensitivity to gains:** rescore the frozen test predictions with alternative gains (e.g. E=1, S=0.5, C=0.25), labelled post-hoc
 
 ### Phase 8 — Website
-See §7.
+See §8.
 
 ---
 
@@ -243,7 +243,7 @@ Plain HTML + CSS + vanilla JS. Chart.js from cdnjs is allowed. No build step and
 **Content rules:**
 - every number on the site comes from `results/*.json`; no hand-typed numbers
 - the Data section credits ESCI (Reddy et al., 2022, Apache-2.0) and shows only the sampled product titles and brands needed for the inspector
-- the Limitations section covers §9
+- the Limitations section covers §10
 - the Reproduce section has the exact commands
 - design: clean and minimal, readable on a 390 px phone and at 1280 px, light and dark mode, no console errors. Test with headless Chromium at both widths and save screenshots to `results/screenshots/`.
 
