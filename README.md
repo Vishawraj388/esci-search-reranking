@@ -106,9 +106,10 @@ released 2021); cross-encoder `ms-marco-MiniLM-L-6-v2` (optional reference only)
 
 ## AI-use disclosure
 
-The code, reports, website and documentation in this repository were drafted with Claude Code (an AI
-coding assistant) from a written specification (`SPEC.md`) authored by the student. The student specified
-the research question, the protocol, the leakage rules, the metrics and the deliverables, and is responsible
-for reviewing, understanding and defending every line. Every judgment call made during the build is logged
-in `results/DECISIONS.md`. No large language model was used to judge relevance or to produce any label,
-feature or prediction.
+## AI-use disclosure
+
+Claude Code was used as an AI coding assistant during the development of this project, including assistance with implementation, debugging, report drafting, documentation, and website development.
+
+The student defined the research question, project scope, methodology, evaluation protocol, data leakage constraints, model selection criteria, and deliverables through the project specification (`SPEC.md`). The student also reviewed the implementation, examined experimental results, and is responsible for understanding and defending the project's technical decisions and conclusions.
+
+All model training and evaluation were performed using the documented Python pipeline. No LLM was used to generate relevance labels, features, or model predictions.
