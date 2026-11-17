@@ -96,22 +96,27 @@ Fallback: the Hugging Face mirror (`tasksource/esci` or similar). If you use it,
 
 ## 5. Student involvement and technical decisions
 
-The student is responsible for understanding and being able to explain
-the complete experimental workflow.
+The student independently conducted the research and defined the
+project's experimental direction.
 
-For each major technical decision, document:
-- The decision made.
-- The alternatives considered.
-- The reason for selecting the approach.
-- Whether the decision was made by the student, suggested by an AI assistant,
-  or developed collaboratively.
+The student's responsibilities included:
+- Researching the problem and formulating the research question.
+- Selecting and understanding the dataset and relevant literature.
+- Designing the experimental methodology, evaluation strategy and
+  data leakage prevention measures.
+- Reviewing experimental outputs and verifying that reported results
+  correspond to actual pipeline executions.
+- Analysing and interpreting the results, identifying limitations
+  and drawing conclusions.
+- Understanding and being able to explain the complete implementation
+  and experimental workflow.
 
-AI-generated suggestions must not automatically be treated as verified facts.
-Experimental results must come from actual execution of the project pipeline.
+Claude Code was used as an AI coding assistant to support implementation,
+debugging, code organisation and website development. It also assisted
+with documentation and report drafting.
 
-The student must independently review the final methodology, code,
-results and conclusions before submission.
-
+The student remains responsible for reviewing and verifying all
+AI-assisted work and for the accuracy of the final submission.
 ---
 ## 6. Build phases
 
